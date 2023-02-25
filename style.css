@@ -399,24 +399,14 @@ p>a {
         flex-direction: column;
     }
 
-    .title-side, .profile-side{
-        width: 100%;
-        min-width: 100%;
-        max-width: 100%;
-        border-right: none;
-        height: auto;
-    }
-
     .profile-side,
     .w-left-l{
-        height: fit-content;
         padding: 2rem;
-        width: 100%;
     }
 
-    .profile-side{
+    /* .profile-side{
         display: none;
-    }
+    } */
 
     .sample-section{
         width: 100%;
@@ -428,21 +418,15 @@ p>a {
         padding: 2rem;
         display: flex;
         flex-direction: column;
-    }
-
-    .profile-side,
-    .aboutMe-side {
-        width: 100%;
-        max-width: 100%;
+        border: none;
     }
 
     .profile-side {
-        height: 100vh;
-        min-height: 100vh;
-        max-height: 100vh;
+        display: none;
     }
 
     .aboutMe-side {
+      
         height: fit-content;
         display: flex;
         flex-direction: column;
