@@ -396,17 +396,15 @@ p>a {
     }
 
     .w-left{
+        width: 100%;
         flex-direction: column;
     }
 
     .profile-side,
     .w-left-l{
+        width: 100%;
         padding: 2rem;
     }
-
-    /* .profile-side{
-        display: none;
-    } */
 
     .sample-section{
         width: 100%;
@@ -437,8 +435,12 @@ p>a {
     .about-me-section-right {
         display: flex;
         flex-direction: column;
-        padding: 2rem 1rem;
+        padding: 0 0;
         border: none;
+    }
+
+    .about-me-section-right{
+        margin-top: 2rem;
     }
 
     .accomplishements {
