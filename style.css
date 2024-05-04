@@ -465,8 +465,6 @@ p>a {
     .profile-side,
     .w-left-l {
         width: 100%;
-        padding: 2rem;
-
     }
 
     .profile-side {
@@ -483,10 +481,14 @@ p>a {
 
     .content-side, .title-side {
         width: 100%;
-        padding: 4rem;
+        padding: 3rem;
         display: flex;
         flex-direction: column;
         border: none;
+    }
+
+    .title-side {
+        padding: 0rem 3rem;
     }
 
 
