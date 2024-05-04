@@ -14,276 +14,301 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
     <title>Thomas Zihindula</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.2.7/purify.min.js"></script>
     <meta name="description"
         content="I am an enthusiastic, confident, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations (can work on self initiative). I am able to work well under pressure and adhere to strict deadlines." />
 </head>
 
 <body>
-    <section id="welcome">
-        <div class="w-left-l profile-side">
-            <img src="https://dpictures.s3.amazonaws.com/pv-d/IMG-20230226-WA0000.jpg" />
-        </div>
-        <div class="w-left-l">
-            <h1 class="superlarge-title">Hi, I am Thomas Zihindula</h1>
-            <div class="social-media">
-                <p>Leave me a message ! </p>
-                <a href="https://wa.me/353830788556" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="mailto:thomaszihindularex@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+    <div id="resume">
+        <section id="welcome">
+            <div class="w-left-l profile-side">
+                <img alt="" src="https://dpictures.s3.amazonaws.com/pv-d/IMG-20230226-WA0000.jpg" />
             </div>
-            <a class="single-action" href="https://dpictures.s3.amazonaws.com/pv-d/LUUCEM.pdf" target="_blank" download>
-                <p>DOWNLOAD CV</p>
-                <i class="fa fa-download"></i>
-            </a>
-    </section>
-    <section class="sample-section">
-        <div class="title-side">
-            <p class="large-subtitle section-title">About me</p>
-        </div>
-        <div class="content-side">
-            <div class="about-me-section">
-                <div class="about-me-section-left">
-                    <p>I am an enthusiastic, confident, self-motivated, reliable, responsible and hard working person. I
-                        am a mature team worker and adaptable to all challenging situations (can work on self
-                        initiative). I am able to work well under pressure and adhere to strict deadlines.<br /><br />
-                        I'm a friendly person, honest, organized and punctual.
-                        I have developed a good listening and communication skills.
-                        I have a creative mind and always up for new challenges.</p>
+            <div class="w-left-l">
+                <h1 class="superlarge-title">Hi, I am Thomas Zihindula</h1>
+                <div class="social-media">
+                    <p style="white-space: nowrap;">Leave me a message</p>
+                    <a href="https://wa.me/353830788556" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:thomaszihindularex@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
                 </div>
-                <div class="about-me-section-right">
-                    <div class="single-identity">
-                        <p class="key">Gender</p>
-                        <p class="value">Male</p>
-                    </div>
-                    <div class="single-identity">
-                        <p class="key">Nationality</p>
-                        <p class="value">Congolese</p>
-                    </div>
-                    <div class="single-identity">
-                        <p class="key">Civil status</p>
-                        <p class="value">Single</p>
-                    </div>
-                    <div class="single-identity">
-                        <p class="key">Address</p>
-                        <p class="value">Dublin, Ireland</p>
-                    </div>
-                    <div class="single-identity">
-                        <p class="key">Languages</p>
-                        <p class="value">English (Fluent) - French (Fluent) - Swahili (Native)</p>
-                    </div>
-                    <div class="single-identity">
-                        <p class="key">Personality</p>
-                        <p class="value">Open minded</p>
-                    </div>
-                </div>
+                <button id="dl-button" class="single-action" style="outline: none; border: none;" onclick="exportAsPDF()">
+                    <p>DOWNLOAD CV</p>
+                    <i class="fa fa-download"></i>
+                </button>
             </div>
-        </div>
-    </section>
-    <section class="sample-section">
-        <div class="title-side">
-            <p class="large-subtitle section-title">Skills</p>
-        </div>
-        <div class="content-side">
-            <div class="skills-section">
-                <div class="single-skill">
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Microsoft_Office_logo_%282013%E2%80%932019%29.png/405px-Microsoft_Office_logo_%282013%E2%80%932019%29.png" />
-                    <p>Office</p>
-                </div>
-                <div class="single-skill">
-                    <img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/acrobat-reader.svg" />
-                    <p>Acrobat Pro</p>
-                </div>
-                <div class="single-skill">
-                    <img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/photoshop.svg" />
-                    <p>Photoshop</p>
-                </div>
-                <div class="single-skill">
-                    <img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/premiere.svg" />
-                    <p>Premiere Pro</p>
-                </div>
-                <div class="single-skill">
-                    <img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/illustrator.svg" />
-                    <p>Illustrator</p>
-                </div>
-                <div class="single-skill">
-                    <img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/after-effects.svg" />
-                    <p>After Effects</p>
-                </div>
-                <div class="single-skill">
-                    <img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/lightroom.svg" />
-                    <p>Lightroom</p>
-                </div>
-                <div class="single-skill">
-                    <img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/indesign.svg" />
-                    <p>InDesign</p>
-                </div>
-                <div class="single-skill">
-                    <img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/audition.svg" />
-                    <p>Audition</p>
-                </div>
-                <div class="single-skill">
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Wondershare_filmora_logo.svg/2048px-Wondershare_filmora_logo.svg.png" />
-                    <p>Filmora</p>
-                </div>
-                <div class="single-skill">
-                    <img src="https://upload.wikimedia.org/wikipedia/fr/e/ef/FL-Studio-12-Logo.png" />
-                    <p>FL Studio</p>
-                </div>
-                <div class="single-skill">
-                    <img
-                        src="https://preview.redd.it/h64z5pa417k91.png?width=1024&format=png&auto=webp&s=6f890715ebd67e04e1b2356986b832a6ad9f6560" />
-                    <p>Studio one</p>
-                </div>
-                 <div class="single-skill">
-                    <img
-                        src="https://infinitesamples.com/cdn/shop/files/ABLETON.png?v=1666051681" />
-                    <p>Ableton</p>
+        </section>
+        <section class="sample-section">
+            <div class="title-side">
+                <p class="section-title">About me</p>
+            </div>
+            <div class="content-side">
+                <p>I am an enthusiastic, confident, self-motivated, reliable, responsible and hard working person. I
+                    am a mature team worker and adaptable to all challenging situations (can work on self
+                    initiative). I am able to work well under pressure and adhere to strict deadlines.<br /><br />
+                    I'm a friendly person, honest, organized and punctual.
+                    I have developed a good listening and communication skills.
+                    I have a creative mind and always up for new challenges.</p>
+            </div>
+        </section>
+        <section class="sample-section">
+            <div class="title-side">
+                <p class="section-title"></p>
+            </div>
+            <div class="content-side">
+                <div class="about-me-section">
+                    <div style="width: 100%;">
+                        <div class="single-identity">
+                            <p class="key">Gender</p>
+                            <p class="value">Male</p>
+                        </div>
+                        <div class="single-identity">
+                            <p class="key">Nationality</p>
+                            <p class="value">Congolese</p>
+                        </div>
+                        <div class="single-identity">
+                            <p class="key">Civil status</p>
+                            <p class="value">Single</p>
+                        </div>
+                        <div class="single-identity">
+                            <p class="key">Address</p>
+                            <p class="value">Dublin, Ireland</p>
+                        </div>
+                        <div class="single-identity">
+                            <p class="key">Languages</p>
+                            <p class="value">English (Fluent) - French (Fluent) - Swahili (Native)</p>
+                        </div>
+                        <div class="single-identity">
+                            <p class="key">Personality</p>
+                            <p class="value">Open minded</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="sample-section">
-        <div class="title-side">
-            <p class="large-subtitle section-title">Education</p>
-        </div>
-        <div class="content-side">
-            <div class="education-section">
-                <div class="single-education">
-                    <h4>Level 5</h4>
-                    <p>Dun Laoghaire Further Education Institute (DFEI) / Ireland</p>
-                    <p class="min-light m-italic">2020 - 2021</p>
-                    <p class="min-normal">Digital creative media</p>
-                </div>
-                <div class="single-education">
-                    <h4>High School</h4>
-                    <p>Stella Maris College (Mwanga Institute) / Democratic Republic of Congo</p>
-                    <p class="min-light m-italic">2013 - 2019</p>
-                    <p class="min-normal">Physics math</p>
-                </div>
-                <div class="single-education">
-                    <h4>Kindergarten and Primary School</h4>
-                    <p>E.P HG S.O.S / Democratic Republic of Congo</p>
-                    <p class="min-light m-italic">2004 - 2013</p>
-                    <!-- <p class="min-normal">88%</p> -->
+        </section>
+        <section class="sample-section">
+            <div class="title-side">
+                <p class="section-title">Skills</p>
+            </div>
+            <div class="content-side">
+                <div class="skills-section">
+                    <div class="single-skill">
+                        <img alt=""
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Microsoft_Office_logo_%282013%E2%80%932019%29.png/405px-Microsoft_Office_logo_%282013%E2%80%932019%29.png" />
+                        <p>Office</p>
+                    </div>
+                    <div class="single-skill">
+                        <img alt="" src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/acrobat-reader.svg" />
+                        <p>Acrobat Pro</p>
+                    </div>
+                    <div class="single-skill">
+                        <img alt="" src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/photoshop.svg" />
+                        <p>Photoshop</p>
+                    </div>
+                    <div class="single-skill">
+                        <img alt="" src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/premiere.svg" />
+                        <p>Premiere Pro</p>
+                    </div>
+                    <div class="single-skill">
+                        <img alt="" src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/illustrator.svg" />
+                        <p>Illustrator</p>
+                    </div>
+                    <div class="single-skill">
+                        <img alt="" src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/after-effects.svg" />
+                        <p>After Effects</p>
+                    </div>
+                    <div class="single-skill">
+                        <img alt="" src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/lightroom.svg" />
+                        <p>Lightroom</p>
+                    </div>
+                    <div class="single-skill">
+                        <img alt="" src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/indesign.svg" />
+                        <p>InDesign</p>
+                    </div>
+                    <div class="single-skill">
+                        <img alt="" src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/audition.svg" />
+                        <p>Audition</p>
+                    </div>
+                    <div class="single-skill">
+                        <img alt=""
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Wondershare_filmora_logo.svg/2048px-Wondershare_filmora_logo.svg.png" />
+                        <p>Filmora</p>
+                    </div>
+                    <div class="single-skill">
+                        <img alt="" src="https://upload.wikimedia.org/wikipedia/fr/e/ef/FL-Studio-12-Logo.png" />
+                        <p>FL Studio</p>
+                    </div>
+                    <div class="single-skill">
+                        <img alt=""
+                            src="https://preview.redd.it/h64z5pa417k91.png?width=1024&format=png&auto=webp&s=6f890715ebd67e04e1b2356986b832a6ad9f6560" />
+                        <p>Studio one</p>
+                    </div>
+                     <div class="single-skill">
+                        <img alt=""
+                            src="https://th.bing.com/th/id/OIP.HJqO8EHEoeateRRrZDv30gAAAA?rs=1&pid=ImgDetMain" />
+                        <p>Ableton</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="sample-section">
-        <div class="title-side">
-            <p class="large-subtitle section-title">Professional Experiences</p>
-        </div>
-        <div class="content-side">
-            <div class="education-section">
-                <div class="single-education">
-                    <h4>Computer technician</h4>
-                    <p>Nova CIM / Democratic Republic of Congo</p>
-                    <p class="min-light m-italic">2016 - 01/2020</p>
-                    <p class="min-normal m-italic m-gray">A printing company and seller of printers</p>
-                    <p class="min-light m-italic">Accomplishments/tasks</p>
-                    <div class="accomplishements">
-                        <div class="single-accomplishements">
-                            <div class="s-a-indicator"></div>
-                            <p>Sale of office supplies</p>
-                        </div>
-                        <div class="single-accomplishements">
-                            <div class="s-a-indicator"></div>
-                            <p>Cash handling</p>
-                        </div>
-                        <div class="single-accomplishements">
-                            <div class="s-a-indicator"></div>
-                            <p>Customer service support</p>
-                        </div>
-                        <div class="single-accomplishements">
-                            <div class="s-a-indicator"></div>
-                            <p>Using methods and tools that enable massive reproductions of words and illustrations for
-                                printing, copying, and document digitization.</p>
-                        </div>
-                        <div class="single-accomplishements">
-                            <div class="s-a-indicator"></div>
-                            <p>Other achievements and tasks include graphic design and maintenance of
-                                computer devices.</p>
-                        </div>
+        </section>
+        <section class="sample-section">
+            <div class="title-side">
+                <p class="section-title">Education</p>
+            </div>
+            <div class="content-side">
+                <div class="education-section">
+                    <div class="single-education">
+                        <h4>Level 5</h4>
+                        <p>Dun Laoghaire Further Education Institute (DFEI) / Ireland</p>
+                        <p class="min-light m-italic">2020 - 2021</p>
+                        <p class="min-normal">Digital creative media</p>
+                    </div>
+                    <div class="single-education">
+                        <h4>High School</h4>
+                        <p>Stella Maris College (Mwanga Institute) / Democratic Republic of Congo</p>
+                        <p class="min-light m-italic">2013 - 2019</p>
+                        <p class="min-normal">Physics math</p>
+                    </div>
+                    <div class="single-education">
+                        <h4>Kindergarten and Primary School</h4>
+                        <p>E.P HG S.O.S / Democratic Republic of Congo</p>
+                        <p class="min-light m-italic">2004 - 2013</p>
+                        <!-- <p class="min-normal">88%</p> -->
                     </div>
                 </div>
-                <div class="single-education">
-                    <h4>Photographer, Videographer and Graphic designer</h4>
-                    <p>SDS Photography Studio / Democratic Republic of Congo</p>
-                    <p class="min-light m-italic">2016 - 01/2020</p>
-                    <p class="min-normal m-italic m-gray">More photographers run and represent businesses that provide
-                        photo and video shooting services as well as the creation and sale of their own and occasionally
-                        other people's photos.</p>
-                    <p class="min-light m-italic">Accomplishments/tasks</p>
-                    <div class="accomplishements">
-                        <div class="single-accomplishements">
-                            <div class="s-a-indicator"></div>
-                            <p>Photographer</p>
-                        </div>
-                        <div class="single-accomplishements">
-                            <div class="s-a-indicator"></div>
-                            <p>Videographer</p>
-                        </div>
-                        <div class="single-accomplishements">
-                            <div class="s-a-indicator"></div>
-                            <p>Graphics designer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-education">
-                    <h4>General operative</h4>
-                    <p>ELIS / Dublin, Tallaght</p>
-                    <p class="min-light m-italic">08/2020 - 04/2023</p>
-                    <p class="min-normal m-italic m-gray">The most comprehensive linen rental and
-                        laundry service available in Ireland</p>
+            </div>
+        </section>
+        <section class="sample-section">
+            <div class="title-side">
+                <p class="section-title">Professional Experiences</p>
+            </div>
+            <div class="content-side">
+                <div class="education-section">
+                    <div class="single-education">
+                        <h4>Computer technician</h4>
+                        <p>Nova CIM / Democratic Republic of Congo</p>
+                        <p class="min-light m-italic">2016 - 01/2020</p>
+                        <p class="min-normal m-italic m-gray">A printing company and seller of printers</p>
                         <p class="min-light m-italic">Accomplishments/tasks</p>
                         <div class="accomplishements">
                             <div class="single-accomplishements">
                                 <div class="s-a-indicator"></div>
-                                <p>Meeting 91% weekly target</p>
+                                <p>Sale of office supplies</p>
                             </div>
                             <div class="single-accomplishements">
                                 <div class="s-a-indicator"></div>
-                                <p>Lifting, caring and packaging of textiles products</p>
+                                <p>Cash handling</p>
                             </div>
                             <div class="single-accomplishements">
                                 <div class="s-a-indicator"></div>
-                                <p>Fix some issues machines could face thanks to the experience gained</p>
+                                <p>Customer service support</p>
                             </div>
                             <div class="single-accomplishements">
                                 <div class="s-a-indicator"></div>
-                                <p>Developing a good communication for a better teamwork</p>
+                                <p>Using methods and tools that enable massive reproductions of words and illustrations for
+                                    printing, copying, and document digitization.</p>
+                            </div>
+                            <div class="single-accomplishements">
+                                <div class="s-a-indicator"></div>
+                                <p>Other achievements and tasks include graphic design and maintenance of
+                                    computer devices.</p>
                             </div>
                         </div>
-                </div>
-                <div class="single-education">
-                    <h4>Production operator</h4>
-                    <p>West Pharmaceutical Services / Dublin, Ireland</p>
-                    <p class="min-light m-italic">04/2023 - pre</p>
-                    <p class="min-normal m-italic m-gray">Designer and manufacturer of injectable pharmaceutical packaging and delivery systems</p>
-<!--                         <p class="min-light m-italic">Accomplishments/tasks</p>
+                    </div>
+                    <div class="single-education">
+                        <h4>Photographer, Videographer and Graphic designer</h4>
+                        <p>SDS Photography Studio / Democratic Republic of Congo</p>
+                        <p class="min-light m-italic">2016 - 01/2020</p>
+                        <p class="min-normal m-italic m-gray">More photographers run and represent businesses that provide
+                            photo and video shooting services as well as the creation and sale of their own and occasionally
+                            other people's photos.</p>
+                        <p class="min-light m-italic">Accomplishments/tasks</p>
                         <div class="accomplishements">
                             <div class="single-accomplishements">
                                 <div class="s-a-indicator"></div>
-                                <p>Meeting 91% weekly target</p>
+                                <p>Photographer</p>
                             </div>
                             <div class="single-accomplishements">
                                 <div class="s-a-indicator"></div>
-                                <p>Lifting, caring and packaging of textiles products</p>
+                                <p>Videographer</p>
                             </div>
                             <div class="single-accomplishements">
                                 <div class="s-a-indicator"></div>
-                                <p>Fix some issues machines could face thanks to the experience gained</p>
+                                <p>Graphics designer</p>
                             </div>
-                            <div class="single-accomplishements">
-                                <div class="s-a-indicator"></div>
-                                <p>Developing a good communication for a better teamwork</p>
+                        </div>
+                    </div>
+                    <div class="single-education">
+                        <h4>General operative</h4>
+                        <p>ELIS / Dublin, Tallaght</p>
+                        <p class="min-light m-italic">08/2020 - 04/2023</p>
+                        <p class="min-normal m-italic m-gray">The most comprehensive linen rental and
+                            laundry service available in Ireland</p>
+                            <p class="min-light m-italic">Accomplishments/tasks</p>
+                            <div class="accomplishements">
+                                <div class="single-accomplishements">
+                                    <div class="s-a-indicator"></div>
+                                    <p>Meeting 91% weekly target</p>
+                                </div>
+                                <div class="single-accomplishements">
+                                    <div class="s-a-indicator"></div>
+                                    <p>Lifting, caring and packaging of textiles products</p>
+                                </div>
+                                <div class="single-accomplishements">
+                                    <div class="s-a-indicator"></div>
+                                    <p>Fix some issues machines could face thanks to the experience gained</p>
+                                </div>
+                                <div class="single-accomplishements">
+                                    <div class="s-a-indicator"></div>
+                                    <p>Developing a good communication for a better teamwork</p>
+                                </div>
                             </div>
-                        </div> -->
+                    </div>
+                    <div class="single-education">
+                        <h4>Production operator</h4>
+                        <p>West Pharmaceutical Services / Dublin, Ireland</p>
+                        <p class="min-light m-italic">04/2023 - pre</p>
+                        <p class="min-normal m-italic m-gray">Designer and manufacturer of injectable pharmaceutical packaging and delivery systems</p>
+    <!--                         <p class="min-light m-italic">Accomplishments/tasks</p>
+                            <div class="accomplishements">
+                                <div class="single-accomplishements">
+                                    <div class="s-a-indicator"></div>
+                                    <p>Meeting 91% weekly target</p>
+                                </div>
+                                <div class="single-accomplishements">
+                                    <div class="s-a-indicator"></div>
+                                    <p>Lifting, caring and packaging of textiles products</p>
+                                </div>
+                                <div class="single-accomplishements">
+                                    <div class="s-a-indicator"></div>
+                                    <p>Fix some issues machines could face thanks to the experience gained</p>
+                                </div>
+                                <div class="single-accomplishements">
+                                    <div class="s-a-indicator"></div>
+                                    <p>Developing a good communication for a better teamwork</p>
+                                </div>
+                            </div> -->
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="sample-section">
+            <div class="title-side">
+                <p class="section-title">Statement</p>
+            </div>
+            <div class="content-side">
+                <p>To safeguard my honor, I swear that these informations are correct, sincere 
+                    and verifiable</p>
+            </div>
+        </section>
+    </div>
+    <script>
+        function exportAsPDF() {
+            document.getElementById('dl-button').style.display = "none";
+            window.print();
+            document.getElementById('dl-button').style.display = "flex";
+          }
+    </script>
 </body>
-
 </html>
